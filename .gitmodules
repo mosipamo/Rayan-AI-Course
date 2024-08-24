@@ -1,0 +1,3 @@
+[submodule "Credit-Card-Fraud-Detection"]
+	path = Credit-Card-Fraud-Detection
+	url = https://github.com/mosipamo/Rayan-AI-Course.git
