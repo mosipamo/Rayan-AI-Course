@@ -99,4 +99,45 @@ We’ll be working with a cleaned version of the Cats vs. Dogs dataset, organize
 
 * * *
 
-- HW3: Variational Autoencoder (Stable Diffusion)
+# HW3: Variational Autoencoder (Stable Diffusion)
+
+## Overview
+
+This repository includes implementations for Homework 3 of the Machine Learning & Deep Learning course, focusing on:
+
+1. **Variational Autoencoder (VAE)**
+2. **Stable Diffusion**
+
+## Variational Autoencoder (VAE)
+
+### Steps
+
+1. **Setup Environment**: Install necessary libraries such as PyTorch and torchvision.
+2. **Load Data**: Prepare and load the MNIST dataset for training and evaluation.
+3. **Define VAE Architecture**:
+   - **Encoder**: Encodes input data into a latent space representation.
+   - **Decoder**: Decodes the latent space back into the original data format.
+4. **Loss Function**: Implement a loss function that combines reconstruction loss and KL divergence.
+5. **Train the Model**: Train the VAE using the training dataset and monitor the loss.
+6. **Evaluate the Model**: Assess the model's performance on the test set and visualize image reconstructions.
+7. **Latent Space Exploration**: Interpolate between latent space representations to explore the learned features.
+8. **2D Latent Space Visualization**: Generate and visualize images from a grid of latent space samples.
+
+## Stable Diffusion
+
+### Steps
+
+1. **Setup Environment**: Install the required libraries for model and image generation.
+2. **Load Models**:
+   - **VAE**: Load the variational autoencoder model.
+   - **Text Encoder**: Load the text encoder for converting prompts to embeddings.
+   - **UNet**: Load the UNet model for image denoising.
+3. **Prepare Prompts**: Convert text prompts into embeddings using the text encoder.
+4. **Generate Images**:
+   - **Latent Conversion**: Use the UNet model to iteratively denoise latent vectors.
+   - **Image Creation**: Convert the denoised latent vectors into final images.
+
+## Results
+
+- **VAE**: Provides image reconstructions and explores latent space representations.
+- **Stable Diffusion**: Generates high-quality images from text descriptions using a denoising process.
