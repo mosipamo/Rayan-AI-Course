@@ -40,6 +40,34 @@ The models are evaluated based on:
 - **Recall**
 - **F1 Score**
 
+* * *
 
-- HW2: Neural Networks and Deep Learning (CNN, Classification, Regression)
+- # HW2: Neural Networks and Deep Learning (CNN, Classification, Regression)
+
+## Overview
+
+This repository contains code and demonstrations for Homework 2 of the Machine Learning & Deep Learning course, focusing on Neural Networks and Deep Learning. It includes examples of Binary Classification, Regression, and more complex datasets using PyTorch.
+
+## Contents
+
+1. **Binary Classification**:
+   - **Dataset**: Synthetic blobs created with `make_blobs`.
+   - **Model**: Simple neural network with one hidden layer.
+   - **Training**: Loss function (Binary Cross-Entropy), optimizer (SGD), and training loop.
+   - **Evaluation**: Accuracy calculation and decision boundary visualization.
+
+2. **Regression**:
+   - **Dataset**: Synthetic regression data generated with `make_regression`.
+   - **Model**: A neural network with multiple hidden layers.
+   - **Training**: Loss function (Mean Squared Error), optimizer (Adam), and training loop.
+   - **Visualization**: Interactive plot of predictions during training.
+
+3. **More Complex Dataset**:
+   - **Dataset**: Synthetic S-curve data.
+   - **Model**: Modified neural network for complex data.
+   - **Training**: Custom training loop to handle complex regression data.
+
+4. **Image Classification**:
+   - **Data**: Placeholder for real image data tasks.
+
 - HW3: Variational Autoencoder (Stable Diffusion)
