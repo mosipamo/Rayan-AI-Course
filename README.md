@@ -42,7 +42,7 @@ The models are evaluated based on:
 
 * * *
 
-- # HW2: Neural Networks and Deep Learning (CNN, Classification, Regression)
+# HW2: Neural Networks and Deep Learning (CNN, Classification, Regression)
 
 ## Overview
 
