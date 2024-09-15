@@ -69,5 +69,34 @@ This repository contains code and demonstrations for Homework 2 of the Machine L
 
 4. **Image Classification**:
    - **Data**: Placeholder for real image data tasks.
+### Image Classification Overview
+We’ll be working with a cleaned version of the Cats vs. Dogs dataset, organized into train and test folders with subfolders for CAT and DOG images. The dataset files are prepared for use in training and evaluating image classification models.
+
+### Key Steps in Image Processing
+1. **Examine the Data**: Use Python’s `os` module and Pillow to gather image data and sizes, then summarize using a pandas DataFrame.
+2. **Preprocess Images**:
+   - **Aspect Ratio & Scaling**: Adjust images to fit desired dimensions, e.g., 224x224 pixels.
+   - **Normalization**: Convert pixel values to a [0,1] range and normalize using mean=[0.485, 0.456, 0.406] and std=[0.229, 0.224, 0.225].
+   - **Transformations**: Apply operations like resizing, cropping, flipping, and rotation to augment data.
+
+### Image Data Preparation
+1. **Create a DataFrame**: Extract and analyze image sizes to help choose model parameters.
+2. **Define and Apply Transformations**: Use PyTorch's `transforms` for tensor conversion, resizing, cropping, and normalization.
+
+### Convolutional Neural Network (CNN)
+1. **Define the Model**: Design a CNN architecture using layers such as `nn.Conv2d`, `nn.Linear`, `F.max_pool2d`, and `F.relu`.
+2. **Training**:
+   - **Instantiate the Model**: Create a CNN model, set up loss and optimization functions.
+   - **Train the Model**: Limit training batches and epochs for efficiency.
+3. **Evaluate**: Test the model's performance on validation data.
+
+### Using Pretrained Models
+1. **Download and Modify Pretrained Models**: Utilize models like AlexNet, VGG, ResNet from `torchvision.models`. Freeze feature parameters and adjust the classifier to output two categories (CAT and DOG).
+2. **Train the Modified Model**: Focus on training the classifier while keeping the feature extraction layers frozen.
+
+### Final Steps
+1. **Run New Images Through the Model**: Test the model with new images to validate performance and predictions.
+
+* * *
 
 - HW3: Variational Autoencoder (Stable Diffusion)
